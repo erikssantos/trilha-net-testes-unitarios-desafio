@@ -29,5 +29,11 @@ namespace TestesUnitarios.Desafio.Console.Services
         {
             return lista.Min();
         }
+
+        public List<int> MultiplicarElementosPor2(List<int> lista)
+        {
+            var listaMultiplicada = lista.Select(x => x * 2).ToList();
+            return listaMultiplicada;
+        }
     }
 }
